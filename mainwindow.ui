@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="files.qrc">
+    <normaloff>:/recursos/iconfinder_solar_system_5044142.png</normaloff>:/recursos/iconfinder_solar_system_5044142.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0">
@@ -307,41 +311,71 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionsol">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_sun_2995005.png</normaloff>:/recursos/iconfinder_sun_2995005.png</iconset>
+   </property>
    <property name="text">
     <string>sol</string>
    </property>
   </action>
   <action name="actionplaneta1">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_EARTH_1715795.png</normaloff>:/recursos/iconfinder_EARTH_1715795.png</iconset>
+   </property>
    <property name="text">
     <string>planeta1</string>
    </property>
   </action>
   <action name="actionplaneta2">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_Mars_1715796.png</normaloff>:/recursos/iconfinder_Mars_1715796.png</iconset>
+   </property>
    <property name="text">
     <string>planeta2</string>
    </property>
   </action>
   <action name="actionplaneta3">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_Mercury_1715798.png</normaloff>:/recursos/iconfinder_Mercury_1715798.png</iconset>
+   </property>
    <property name="text">
     <string>planeta3</string>
    </property>
   </action>
   <action name="actionplaneta4">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_Neptune_1715800.png</normaloff>:/recursos/iconfinder_Neptune_1715800.png</iconset>
+   </property>
    <property name="text">
     <string>planeta4</string>
    </property>
   </action>
   <action name="actionplaneta5">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_Venus_1715802.png</normaloff>:/recursos/iconfinder_Venus_1715802.png</iconset>
+   </property>
    <property name="text">
     <string>planeta5</string>
    </property>
   </action>
   <action name="actionAcerca_de">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_exclamation-mark-round-sign-caution_3643776.png</normaloff>:/recursos/iconfinder_exclamation-mark-round-sign-caution_3643776.png</iconset>
+   </property>
    <property name="text">
     <string>Acerca de ...</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="files.qrc"/>
+ </resources>
  <connections/>
 </ui>
