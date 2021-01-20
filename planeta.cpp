@@ -1,5 +1,15 @@
 #include "planeta.h"
 
+float planeta::getVX() const
+{
+    return VX;
+}
+
+float planeta::getVY() const
+{
+    return VY;
+}
+
 planeta::planeta(float PX_, float PY_, float VX_, float VY_, float mass, float R_)
 {
     PX = PX_;

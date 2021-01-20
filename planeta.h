@@ -26,9 +26,12 @@ public:
     float getPY() const;
     float getMasa() const;
     float getR() const;
+    float getVX() const;
+    float getVY() const;
 
     void acelerar(float px2_,float py2_, float mass2);
     void actualizar(float dt);
+
 };
 
 #endif // PLANETA_H
