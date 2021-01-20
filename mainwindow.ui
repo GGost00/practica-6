@@ -13,9 +13,334 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_18">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>       POSICIONES</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="2">
+       <widget class="QLabel" name="label_13">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>      VELOCIDADES</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_16">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>  MASA</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLabel" name="label_19">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>RADIO</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>      X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_14">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>      Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_17">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>      X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>       Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QDoubleSpinBox" name="posicionx_2">
+        <property name="minimum">
+         <double>-10000000000000000019156750857346687362159551272651920111528035145993793242039887559612361451081803235328.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>999999999999999959416724456350362731491996089648451439669739009806703922950954425516032.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="posiciony_2">
+        <property name="minimum">
+         <double>-999999999999999967336168804116691273849533185806555472917961779471295845921727862608739868455469056.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>99999999999999999769037024514370800696612547992403838920556863966097586548129676477911932478685184.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QDoubleSpinBox" name="velocidadx_2">
+        <property name="minimum">
+         <double>-9999999999999999594167244563503627314919960896484514396697390098067039229509544255160320.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10000000000000000202188791271559469885760963232143577411377768562080040049981643093586978275328.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QDoubleSpinBox" name="velocidady_2">
+        <property name="minimum">
+         <double>-1000000000000000043845843045076197354634047651840.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>1000000000000000057857959942726969827393378689175040438172647424.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QSpinBox" name="masa_2">
+        <property name="minimum">
+         <number>-999999999</number>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QSpinBox" name="radio_2">
+        <property name="minimum">
+         <number>-999999999</number>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="generar_2">
+        <property name="text">
+         <string>GENERAR</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="iniciar_2">
+        <property name="text">
+         <string>INICIAR</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QPushButton" name="parar_2">
+        <property name="text">
+         <string>PARAR</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>posicion</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="posix_3">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="posiy_3">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>velocidad</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="velox_2">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="veloy_2">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>aceleracion</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QLabel" name="acele_x">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="acele_y">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuplanetas">
+    <property name="title">
+     <string>Planetas</string>
+    </property>
+    <addaction name="actionsol"/>
+    <addaction name="actionplaneta1"/>
+    <addaction name="actionplaneta2"/>
+    <addaction name="actionplaneta3"/>
+    <addaction name="actionplaneta4"/>
+    <addaction name="actionplaneta5"/>
+   </widget>
+   <widget class="QMenu" name="menuayuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionAcerca_de"/>
+   </widget>
+   <addaction name="menuplanetas"/>
+   <addaction name="menuayuda"/>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionsol">
+   <property name="text">
+    <string>sol</string>
+   </property>
+  </action>
+  <action name="actionplaneta1">
+   <property name="text">
+    <string>planeta1</string>
+   </property>
+  </action>
+  <action name="actionplaneta2">
+   <property name="text">
+    <string>planeta2</string>
+   </property>
+  </action>
+  <action name="actionplaneta3">
+   <property name="text">
+    <string>planeta3</string>
+   </property>
+  </action>
+  <action name="actionplaneta4">
+   <property name="text">
+    <string>planeta4</string>
+   </property>
+  </action>
+  <action name="actionplaneta5">
+   <property name="text">
+    <string>planeta5</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de">
+   <property name="text">
+    <string>Acerca de ...</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
