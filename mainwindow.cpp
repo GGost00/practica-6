@@ -21,6 +21,12 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setScene(scene);
     ui->centralwidget->adjustSize();
     PLANETA=0;
+    ui->posix_3->setText("0");
+    ui->posiy_3->setText("0");
+    ui->velox_2->setText("0");
+    ui->veloy_2->setText("0");
+    ui->acele_x->setText("0");
+    ui->acele_y->setText("0");
     timer->stop();
     //scene->setBackgroundBrush(QBrush(QImage(":/images/images/fondo.jpg")));
     connect(timer,SIGNAL(timeout()),this,SLOT(actualizar()));
@@ -140,14 +146,13 @@ void MainWindow::on_actionAcerca_de_triggered()
     QString txt;
     txt="para poder ver las propiedades de los planetas \n"
         "las cuales son:\n"
-        "- Posicion x,y\n"
-        "- Velocidad\n"
-        "- Aceleracion\n"
+        "- Posicion (x,y)\n"
+        "- Velocidad (x,y)\n"
+        "- Aceleracion (x,y)\n"
         "Seleccione la opcion de planetas y seleccione\n"
         "el planeta al cual le desea ver las propiedades,\n"
-        "estas cualidades saldran en la parde abajo en la \n"
-        "derecha las cuales podra ver de una manera facil \n"
-        "y sencilla.";
+        "estas cualidades saldran en la parde abajo  las\n"
+        "cuales podra ver de una manera facil y sencilla.\n";
     QMessageBox::about(this,"Instrucciones",txt);
 }
 
@@ -183,3 +188,20 @@ void MainWindow::on_parar_2_clicked()
 }
 
 
+
+void MainWindow::on_actionComo_Crear_Planetas_triggered()
+{
+    QString txt;
+    txt="para poder crear los planetas ingrese\n"
+        "en la parte de arriba sus propiedades, \n"
+        "colocando los valores en sus casillas \n"
+        "correspondientes, las cuales se encuentran\n"
+        "asi:\n"
+        "            Posicion\n"
+        "     x                         y\n"
+        "[posicion x] [posicion y]\n"
+        "asi se muestra en pantalla , y se agrega \n"
+        "el valor x donde dice posicion x y de la \n"
+        "misma forma del otro lado .\n";
+    QMessageBox::about(this,"Instrucciones",txt);
+}

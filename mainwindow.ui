@@ -317,6 +317,7 @@
      <string>Ayuda</string>
     </property>
     <addaction name="actionAcerca_de"/>
+    <addaction name="actionComo_Crear_Planetas"/>
    </widget>
    <addaction name="menuplanetas"/>
    <addaction name="menuayuda"/>
@@ -382,7 +383,16 @@
      <normaloff>:/recursos/iconfinder_exclamation-mark-round-sign-caution_3643776.png</normaloff>:/recursos/iconfinder_exclamation-mark-round-sign-caution_3643776.png</iconset>
    </property>
    <property name="text">
-    <string>Acerca de ...</string>
+    <string>Como ver propiedades de los planetas</string>
+   </property>
+  </action>
+  <action name="actionComo_Crear_Planetas">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_question-outline_3017956.png</normaloff>:/recursos/iconfinder_question-outline_3017956.png</iconset>
+   </property>
+   <property name="text">
+    <string>Como crear los planetas</string>
    </property>
   </action>
  </widget>
