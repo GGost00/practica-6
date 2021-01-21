@@ -33,15 +33,15 @@ private slots:
 
     void on_actionsol_triggered();
 
-    void on_actionplaneta_1_triggered();
+    void on_actionplaneta1_triggered();
 
-    void on_actionplaneta_2_triggered();
+    void on_actionplaneta2_triggered();
 
-    void on_actionplaneta_3_triggered();
+    void on_actionplaneta3_triggered();
 
-    void on_actionplaneta_4_triggered();
+    void on_actionplaneta4_triggered();
 
-    void on_actionplaneta_5_triggered();
+    void on_actionplaneta5_triggered();
 
     void on_actionAcerca_de_triggered();
 
@@ -51,13 +51,15 @@ private slots:
 
     void on_parar_2_clicked();
 
+
+
 private:
     ofstream Guardar;
     Ui::MainWindow *ui;
     QTimer *timer;
     QGraphicsScene *scene;
     float dt,PLANETA,POSX,POSY,RADIO,MASA,VELOX,VELOY;
-    int h_limit,v_limit,variable=0;
+    int h_limit,v_limit,variable=0,c;
     QList<planetagraf*>bars;
 
 

@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     scene->setSceneRect(-h_limit/2,-v_limit/2,h_limit,v_limit);
     ui->graphicsView->setScene(scene);
     ui->centralwidget->adjustSize();
+    PLANETA=0;
     timer->stop();
     //scene->setBackgroundBrush(QBrush(QImage(":/images/images/fondo.jpg")));
     connect(timer,SIGNAL(timeout()),this,SLOT(actualizar()));
@@ -48,6 +49,54 @@ void MainWindow::actualizar()
 
     }
     Guardar.close();
+    if(c==1 && bars.size()>=1){
+        ui->posix_3->setText(QString::number(bars.at(0)->getEsf()->getPX()));
+        ui->posiy_3->setText(QString::number(bars.at(0)->getEsf()->getPY()));
+        ui->velox_2->setText(QString::number(bars.at(0)->getEsf()->getVX()));
+        ui->veloy_2->setText(QString::number(bars.at(0)->getEsf()->getVY()));
+        ui->acele_x->setText(QString::number(bars.at(0)->getEsf()->getAX()));
+        ui->acele_y->setText(QString::number(bars.at(0)->getEsf()->getAY()));
+    }
+    else if(c==2 && bars.size()>=2){
+        ui->posix_3->setText(QString::number(bars.at(1)->getEsf()->getPX()));
+        ui->posiy_3->setText(QString::number(bars.at(1)->getEsf()->getPY()));
+        ui->velox_2->setText(QString::number(bars.at(1)->getEsf()->getVX()));
+        ui->veloy_2->setText(QString::number(bars.at(1)->getEsf()->getVY()));
+        ui->acele_x->setText(QString::number(bars.at(1)->getEsf()->getAX()));
+        ui->acele_y->setText(QString::number(bars.at(1)->getEsf()->getAY()));
+    }
+    else if(c==3 && bars.size()>=3){
+        ui->posix_3->setText(QString::number(bars.at(2)->getEsf()->getPX()));
+        ui->posiy_3->setText(QString::number(bars.at(2)->getEsf()->getPY()));
+        ui->velox_2->setText(QString::number(bars.at(2)->getEsf()->getVX()));
+        ui->veloy_2->setText(QString::number(bars.at(2)->getEsf()->getVY()));
+        ui->acele_x->setText(QString::number(bars.at(2)->getEsf()->getAX()));
+        ui->acele_y->setText(QString::number(bars.at(2)->getEsf()->getAY()));
+    }
+    else if(c==4 && bars.size()>=4){
+        ui->posix_3->setText(QString::number(bars.at(3)->getEsf()->getPX()));
+        ui->posiy_3->setText(QString::number(bars.at(3)->getEsf()->getPY()));
+        ui->velox_2->setText(QString::number(bars.at(3)->getEsf()->getVX()));
+        ui->veloy_2->setText(QString::number(bars.at(3)->getEsf()->getVY()));
+        ui->acele_x->setText(QString::number(bars.at(3)->getEsf()->getAX()));
+        ui->acele_y->setText(QString::number(bars.at(3)->getEsf()->getAY()));
+    }
+    else if(c==5 && bars.size()>=5){
+        ui->posix_3->setText(QString::number(bars.at(4)->getEsf()->getPX()));
+        ui->posiy_3->setText(QString::number(bars.at(4)->getEsf()->getPY()));
+        ui->velox_2->setText(QString::number(bars.at(4)->getEsf()->getVX()));
+        ui->veloy_2->setText(QString::number(bars.at(4)->getEsf()->getVY()));
+        ui->acele_x->setText(QString::number(bars.at(4)->getEsf()->getAX()));
+        ui->acele_y->setText(QString::number(bars.at(4)->getEsf()->getAY()));
+    }
+    else if(c==6 && bars.size()>=6){
+        ui->posix_3->setText(QString::number(bars.at(5)->getEsf()->getPX()));
+        ui->posiy_3->setText(QString::number(bars.at(5)->getEsf()->getPY()));
+        ui->velox_2->setText(QString::number(bars.at(5)->getEsf()->getVX()));
+        ui->veloy_2->setText(QString::number(bars.at(5)->getEsf()->getVY()));
+        ui->acele_x->setText(QString::number(bars.at(5)->getEsf()->getAX()));
+        ui->acele_y->setText(QString::number(bars.at(5)->getEsf()->getAY()));
+    }
 }
 
 
@@ -55,94 +104,35 @@ void MainWindow::actualizar()
 
 void MainWindow::on_actionsol_triggered()
 {
-    if(bars.size()>1){
-        qDebug()<<bars.at(0)->getEsf()->getPX()<<","<<bars.at(0)->getEsf()->getPY()<<","<<bars.at(0)->getEsf()->getVX()<<","<<bars.at(0)->getEsf()->getVY()<<endl;
-    }
-    else{
-        ui->posix_3->setText("x= 0");
-        ui->posiy_3->setText("y= 0");
-        ui->velox_2->setText("0");
-        ui->veloy_2->setText("0");
-        ui->acele_x->setText("0");
-        ui->acele_y->setText("0");
-    }
-
+    c=1;
 }
 
-void MainWindow::on_actionplaneta_1_triggered()
+
+
+void MainWindow::on_actionplaneta1_triggered()
 {
 
-    if(bars.size()>2){
-        qDebug()<<bars.at(1)->getEsf()->getPX()<<","<<bars.at(1)->getEsf()->getPY()<<","<<bars.at(1)->getEsf()->getVX()<<","<<bars.at(1)->getEsf()->getVY()<<endl;
-    }
-    else{
-        ui->posix_3->setText("x= 0");
-        ui->posiy_3->setText("y= 0");
-        ui->velox_2->setText("0");
-        ui->veloy_2->setText("0");
-        ui->acele_x->setText("0");
-        ui->acele_y->setText("0");
-    }
+    c=2;
 }
 
-void MainWindow::on_actionplaneta_2_triggered()
+void MainWindow::on_actionplaneta2_triggered()
 {
-    if(bars.size()>3){
-        qDebug()<<bars.at(2)->getEsf()->getPX()<<","<<bars.at(2)->getEsf()->getPY()<<","<<bars.at(2)->getEsf()->getVX()<<","<<bars.at(2)->getEsf()->getVY()<<endl;
-    }
-    else{
-        ui->posix_3->setText("x= 0");
-        ui->posiy_3->setText("y= 0");
-        ui->velox_2->setText("0");
-        ui->veloy_2->setText("0");
-        ui->acele_x->setText("0");
-        ui->acele_y->setText("0");
-    }
+    c=3;
 }
 
-void MainWindow::on_actionplaneta_3_triggered()
+void MainWindow::on_actionplaneta3_triggered()
 {
-    if(bars.size()>4){
-        qDebug()<<bars.at(3)->getEsf()->getPX()<<","<<bars.at(3)->getEsf()->getPY()<<","<<bars.at(3)->getEsf()->getVX()<<","<<bars.at(3)->getEsf()->getVY()<<endl;
-    }
-    else{
-        ui->posix_3->setText("x= 0");
-        ui->posiy_3->setText("y= 0");
-        ui->velox_2->setText("0");
-        ui->veloy_2->setText("0");
-        ui->acele_x->setText("0");
-        ui->acele_y->setText("0");
-    }
+    c=4;
 }
 
-void MainWindow::on_actionplaneta_4_triggered()
+void MainWindow::on_actionplaneta4_triggered()
 {
-    if(bars.size()>5){
-        qDebug()<<bars.at(4)->getEsf()->getPX()<<","<<bars.at(4)->getEsf()->getPY()<<","<<bars.at(4)->getEsf()->getVX()<<","<<bars.at(4)->getEsf()->getVY()<<endl;
-    }
-    else{
-        ui->posix_3->setText("x= 0");
-        ui->posiy_3->setText("y= 0");
-        ui->velox_2->setText("0");
-        ui->veloy_2->setText("0");
-        ui->acele_x->setText("0");
-        ui->acele_y->setText("0");
-    }
+    c=5;
 }
 
-void MainWindow::on_actionplaneta_5_triggered()
+void MainWindow::on_actionplaneta5_triggered()
 {
-    if(bars.size()>6){
-        qDebug()<<bars.at(5)->getEsf()->getPX()<<","<<bars.at(5)->getEsf()->getPY()<<","<<bars.at(5)->getEsf()->getVX()<<","<<bars.at(5)->getEsf()->getVY()<<endl;
-    }
-    else{
-        ui->posix_3->setText("x= 0");
-        ui->posiy_3->setText("y= 0");
-        ui->velox_2->setText("0");
-        ui->veloy_2->setText("0");
-        ui->acele_x->setText("0");
-        ui->acele_y->setText("0");
-    }
+    c=6;
 }
 
 void MainWindow::on_actionAcerca_de_triggered()
@@ -171,9 +161,12 @@ void MainWindow::on_generar_2_clicked()
 
     for(int i=0;i<bars.size();i++){
         bars.at(i)->actualizar(dt);
+        if (i==PLANETA){
+        bars.at(i)->setPintura(PLANETA);
+        }
         scene->addItem(bars.at(i));
     }
-
+    PLANETA+=1;
 
     ui->iniciar_2->setEnabled(true);
     ui->parar_2->setEnabled(true);
@@ -188,3 +181,5 @@ void MainWindow::on_parar_2_clicked()
 {
     timer->stop();
 }
+
+

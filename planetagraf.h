@@ -13,6 +13,7 @@ private:
     QPixmap pixmap1,pixmap2,pixmap3,pixmap4,pixmap5;
     planeta *esf;
     float escala;
+
 public:
     planetagraf(float x, float y, float vx, float vy, float m, float r);
     QRectF boundingRect() const;

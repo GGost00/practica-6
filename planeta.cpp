@@ -10,6 +10,16 @@ float planeta::getVY() const
     return VY;
 }
 
+float planeta::getAX() const
+{
+    return AX;
+}
+
+float planeta::getAY() const
+{
+    return AY;
+}
+
 planeta::planeta(float PX_, float PY_, float VX_, float VY_, float mass, float R_)
 {
     PX = PX_;

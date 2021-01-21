@@ -4,6 +4,7 @@
 planetagraf::planetagraf(float x, float y, float vx, float vy, float m, float r):escala(0.05)
 {
     esf = new planeta(x,y,vx,vy,m,r);
+
 }
 
 QRectF planetagraf::boundingRect() const
@@ -13,29 +14,37 @@ QRectF planetagraf::boundingRect() const
 
 void planetagraf::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    painter->setBrush(Qt::darkGreen);
-    painter->drawEllipse(boundingRect());
+//    painter->setBrush(Qt::darkGreen);
+//    painter->drawEllipse(boundingRect());
 
-//    if(pintura==0){
-//        pixmap1.load(":/images/images/sol.png");
-//        painter->drawPixmap(boundingRect(),pixmap1,pixmap1.rect());
-//    }
-//    else if(pintura==2){
-//        pixmap2.load(":/images/images/planeta4.png");
-//        painter->drawPixmap(boundingRect(),pixmap2,pixmap2.rect());
-//    }
-//    else if(pintura==3){
-//        pixmap3.load(":/images/images/planeta3.png");
-//        painter->drawPixmap(boundingRect(),pixmap3,pixmap3.rect());
-//    }
-//    else if(pintura==4){
-//        pixmap4.load(":/images/images/planeta2.png");
-//        painter->drawPixmap(boundingRect(),pixmap4,pixmap4.rect());
-//    }
-//    else if(pintura==5){
-//        pixmap5.load(":/images/images/planeta1.png");
-//        painter->drawPixmap(boundingRect(),pixmap5,pixmap5.rect());
-//    }
+    if(pintura==0){
+        painter->setBrush(Qt::yellow);
+    painter->drawEllipse(boundingRect());
+    }
+    else if(pintura==1){
+        painter->setBrush(Qt::darkCyan);
+    painter->drawEllipse(boundingRect());
+    }
+    else if(pintura==2){
+        painter->setBrush(Qt::red);
+    painter->drawEllipse(boundingRect());
+    }
+    else if(pintura==3){
+        painter->setBrush(Qt::darkGray);
+    painter->drawEllipse(boundingRect());
+    }
+   else if(pintura==4){
+        painter->setBrush(Qt::darkBlue);
+    painter->drawEllipse(boundingRect());
+    }
+    else if(pintura==5){
+         painter->setBrush(Qt::darkRed);
+     painter->drawEllipse(boundingRect());
+     }
+    else{
+         painter->setBrush(Qt::green);
+     painter->drawEllipse(boundingRect());
+     }
 
 
 }

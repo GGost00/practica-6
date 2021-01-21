@@ -28,9 +28,12 @@ public:
     float getR() const;
     float getVX() const;
     float getVY() const;
+    float getAX() const;
+    float getAY() const;
 
     void acelerar(float px2_,float py2_, float mass2);
     void actualizar(float dt);
+
 
 };
 
