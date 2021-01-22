@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Sistema Planetario</string>
   </property>
   <property name="windowIcon">
    <iconset resource="files.qrc">
@@ -311,6 +311,7 @@
     <addaction name="actionplaneta3"/>
     <addaction name="actionplaneta4"/>
     <addaction name="actionplaneta5"/>
+    <addaction name="actionNinguno"/>
    </widget>
    <widget class="QMenu" name="menuayuda">
     <property name="title">
@@ -393,6 +394,15 @@
    </property>
    <property name="text">
     <string>Como crear los planetas</string>
+   </property>
+  </action>
+  <action name="actionNinguno">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/recursos/iconfinder_error-fill_3017964.png</normaloff>:/recursos/iconfinder_error-fill_3017964.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ninguno</string>
    </property>
   </action>
  </widget>

@@ -55,6 +55,8 @@ private slots:
 
     void on_actionComo_Crear_Planetas_triggered();
 
+    void on_actionNinguno_triggered();
+
 private:
     ofstream Guardar;
     Ui::MainWindow *ui;

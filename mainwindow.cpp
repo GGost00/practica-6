@@ -103,6 +103,14 @@ void MainWindow::actualizar()
         ui->acele_x->setText(QString::number(bars.at(5)->getEsf()->getAX()));
         ui->acele_y->setText(QString::number(bars.at(5)->getEsf()->getAY()));
     }
+    else {
+        ui->posix_3->setText("0");
+        ui->posiy_3->setText("0");
+        ui->velox_2->setText("0");
+        ui->veloy_2->setText("0");
+        ui->acele_x->setText("0");
+        ui->acele_y->setText("0");
+    }
 }
 
 
@@ -204,4 +212,9 @@ void MainWindow::on_actionComo_Crear_Planetas_triggered()
         "el valor x donde dice posicion x y de la \n"
         "misma forma del otro lado .\n";
     QMessageBox::about(this,"Instrucciones",txt);
+}
+
+void MainWindow::on_actionNinguno_triggered()
+{
+    c=7;
 }
